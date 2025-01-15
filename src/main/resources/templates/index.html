@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <title>CHOC'O MIEL</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="#acceuil">ACCEUIL</a>
+        </li>
+        <li>
+          <a href="../html5/menu.html">MENU</a>
+        </li>
+        <li>
+          <a href="#service">SERVICE</a>
+        </li>
+        <li>
+          <a href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="acceuil">
+      <div class="local"><img src="../image/pexels-rbrigant44-747101.jpg" alt="pexels-rbrigant44-747101"></div>
+      <div class="histo">
+        <div>
+          <h1>A propos</h1>
+          <p>Créé en 2021, <span>Maximum de saveur, minimum de coût</span>,Notre restaurants a son locaux presque dans touts les provinces. Nous nous engageons à offrir des produits de qualité supérieure tout en restant accessibles à tous.</p>
+        </div>
+        <div>
+          <h1>Locaux</h1>
+          <ul>
+            <li>Antananarive</li>
+            <li>Majunga</li>
+            <li>Tuléar</li>
+          </ul><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Tour%20Eiffel%20Paris">View map</a></span>
+        </div>
+        <div>
+          <h1>Horaire</h1>
+          <p>En faite , nous sommes travailler un équipe et à décider de vous donner un satisfaction</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Heure</th>
+                <th>Jour</th>
+                <th>Mois</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>24h/24</th>
+                <th>7j/7</th>
+                <th>12m/12</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h1>Chef</h1><br>
+        <hr>
+        <br>
+        <div class="users">
+          <div class="chef">
+            <img src="../image/1711391011672.jpg" alt="1711391011672"> <abbr title="chef diplomé professionnel">Jean luc</abbr>
+          </div>
+          <div class="chef">
+            <img src="../image/1711391011672.jpg" alt="1711391011672"> <abbr title="chef diplomé professionnel">Jean luc</abbr>
+          </div>
+          <div class="chef">
+            <img src="../image/1711391011672.jpg" alt="1711391011672"> <abbr title="chef diplomé professionnel">Jean luc</abbr>
+          </div>
+          <div class="chef">
+            <img src="../image/1711391011672.jpg" alt="1711391011672"> <abbr title="chef diplomé professionnel">Jean luc</abbr>
+          </div>
+          <div class="chef">
+            <img src="../image/1711391011672.jpg" alt="1711391011672"> <abbr title="chef diplomé professionnel">Jean luc</abbr>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menu">
+      <h2>Notre spécialité</h2><br>
+      <hr />
+      <br />
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <figure>
+              <img src="../image/stew.jpg" alt="Image 1">
+              <figcaption>
+                Ragoût
+              </figcaption>
+            </figure>
+          </div>
+          <div class="slide">
+            <figure>
+              <img src="../image/kaly%20gasy.jpg" alt="Image 2">
+              <figcaption>
+                Kaly gasy
+              </figcaption>
+            </figure>
+          </div>
+          <div class="slide">
+            <figure>
+              <img src="../image/IMG_20230401_211310.jpg" alt="Image 3">
+              <figcaption>
+                Ravitoto sy henankisoa
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="service">
+      <div class="livraison">
+        <h2><abbr title="gratuit au tanà">Commander votre goutée</abbr></h2><br>
+        <hr>
+        <br>
+        <form>
+          <div>
+            <div class="div-position">
+              <label for="email">Email</label> <label for="menu">Nom de menu</label> <label for="date">Date</label>
+            </div>
+            <div class="div-position">
+              <input type="email" name="email" class="input-style"> <input type="name" name="menu" class="input-style"> <input type="date" name="date" class="input-style">
+            </div>
+          </div><button type="submit">Valider</button>
+        </form>
+      </div>
+      <br />
+      <hr />
+      <div class="offre">
+        <h3>Offre</h3>
+        <p><span>L'achat de 2 produit offre 1produit gratuit</span> ,pour tout le monde et <span>la loterie</span> , c'est pour les clients du choc'o miel qui finira par avoir du gouter chez nous pendant une semaine<br></p>
+      </div>
+      <div class="connaissance">
+        <h5>Des petits connaissances</h5>
+        <span>Avantage de chocolat</span>
+        <ul>
+          <li>bon pour le cerveau</li>
+          <li>amelioration de memoire</li>
+        </ul>
+        <span>inconvenients du chocolat</span>
+        <ul>
+          <li>l'insuffisance cardiaque</li>
+          <li>le deshydratation convulsions</li>
+        </ul>
+        <span>avantage du miel</span>
+        <ul>
+          <li>antibacterien</li>
+          <li>antioxydant</li>
+          <li>anti-inflammatoire</li>
+          <li>antiseptique</li>
+        </ul>
+        <span>incovenients du miel</span>
+        <ul>
+          <li> prise de poids</li>
+        </ul> 
+      </div>
+    </section>
+    <div class="menu_du_jour">
+      <h1>Quelques un pour faire plaisir à vos langue</h1> <br />
+      <hr />
+      <br />
+      <div class="all">
+        <div class="image-duo">
+          <div class="image-kaly">
+            <img src="../image/g%C3%A2teau%20Oreo.jpg" alt="Image description">
+            <div class="overlay">
+              <h2>Gateau oréo</h2>
+              <p>1450$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+          <div class="image-kaly">
+            <img src="../image/IMG_20230329_202007.jpg" alt="Image description">
+            <div class="overlay">
+              <h2>Bonbon crostillante</h2>
+              <p>1550$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div class="image-duo">
+          <div class="image-kaly">
+            <img src="../image/croque-monsieur.jpg" alt="croque-monsieur">
+            <div class="overlay">
+              <h2>Croque monsieur</h2>
+              <p>1600$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+          <div class="image-kaly">
+            <img src="../image/IMG_20230401_211200.jpg" alt="IMG_20230401_211200">
+            <div class="overlay">
+              <h2>sandwich</h2>
+              <p>1650$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+        </div><br />
+        <hr />
+        <br />
+        <div class="image-duo">
+          <div class="image-kaly">
+            <img src="../image/la%20cr%C3%A8me%20glac%C3%A9e%20au%20chocolat.jpg" alt="la%20cr%C3%A8me%20glac%C3%A9e%20au%20chocolat">
+            <div class="overlay">
+              <h2>La crème glacée au chocolat</h2>
+              <p>1300$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+          <div class="image-kaly">
+            <img src="../image/tablette%20de%20chocolat%20aux%20noisettes.jpg" alt="tablette%20de%20chocolat%20aux%20noisettes">
+            <div class="overlay">
+              <h2>Tablette de chocolat aux noisettes</h2>
+              <p>1350$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+        </div><br />
+        <hr />
+        <br />
+        <div class="image-duo">
+          <div class="image-kaly">
+            <img src="../image/soupe%20de%20carottes.jpg" alt="soupe%20de%20carottes">
+            <div class="overlay">
+              <h2>Soupe de carotte au poirreaux</h2>
+              <p>1400$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+          <div class="image-kaly">
+            <img src="../image/Soupe%20de%20tomates%20maison.jpg" alt="Soupe%20de%20tomates%20maison">
+            <div class="overlay">
+              <h2>Soupe de tomates</h2>
+              <p>1350$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+        </div><br />
+        <hr />
+        <br />
+        <div class="image-duo">
+          <div class="image-kaly">
+            <img src="../image/tacos.jpg" alt="tacos">
+            <div class="overlay">
+              <h2>Tacos au poulet</h2>
+              <p>1550$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+          <div class="image-kaly">
+            <img src="../image/sandwich%20croissant.jpg" alt="sandwich%20croissant">
+            <div class="overlay">
+              <h2>sandwich croissant</h2>
+              <p>1600$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+        </div><br />
+        <hr />
+        <br />
+        <div class="image-duo">
+          <div class="image-kaly">
+            <img src="../image/stale%20mate.jpg" alt="stale%20mate">
+            <div class="overlay">
+              <h2>State mate</h2>
+              <p>1700$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+          <div class="image-kaly">
+            <img src="../image/smoothie.jpg" alt="smoothie">
+            <div class="overlay">
+              <h2>Smoothie</h2>
+              <p>1750$</p><a href="./menu.html">Search ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="contact">
+      <h2>Contactez nous !</h2>
+      <form>
+        <div>
+          <div class="div-position">
+            <label for="email">Email</label> <label for="rating">Rating</label> <label for="message">Message</label> <label for="">Provinces</label>
+          </div>
+          <div class="div-position">
+            <input type="email" name="" class="input-style"> <input type="number" name="" id="" class="input-style"> 
+            <textarea name="" id="" cols="10" rows="3" class="input-style"></textarea> <select name="" id="" class="input-style">
+              <option value="">
+                Antananarive
+              </option>
+              <option value="">
+                Majunga
+              </option>
+              <option value="">
+                Tuléar
+              </option>
+            </select>
+          </div>
+        </div><button type="submit">Envoyez</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Merci pour votre visite, © by <a href="https://github.com/Maminiainaando">Aina Rajaonarison</a></p>
+  </footer>
+</body>
+</html>

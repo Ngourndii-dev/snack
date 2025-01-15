@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <title>CHOC'O MIEL</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Taste</th>
+            <th>Description</th>
+            <th>Image</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr th:each="item : ${menu}">
+                <td th:text="${item.name}">Product Name</td>
+                <td th:text="${item.price}">Price</td>
+                <td th:text="${item.taste}">Taste</td>
+                <td th:text="${item.description}">Description</td>é
+                <td>
+                    <img th:src="${item.imageUrl}" alt="Image" style="width: 100px; height: auto;"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="https://drive.google.com/file/d/1_Z5NlGHatTRUTPl2rIOkMmKQmk38DqUL/view?usp=sharing">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>
